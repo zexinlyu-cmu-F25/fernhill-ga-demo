@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fernhill Coffee — Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="analytics.js"></script>
+</head>
+<body>
+  <header><div class="wrap">
+    <a class="logo" href="index.html">☕ Fernhill Coffee</a>
+    <nav><a href="index.html">Home</a><a href="shop.html" class="active">Shop</a><a href="contact.html">Contact</a></nav>
+  </div></header>
+
+  <main class="wrap">
+    <div class="hero">
+      <h1>Shop</h1>
+      <p>Buttons here send GA4 ecommerce-style events: <code>view_item</code>, <code>add_to_cart</code> and <code>purchase</code>.</p>
+    </div>
+
+    <section>
+      <div class="grid">
+        <div class="card">
+          <div class="swatch" style="background:#8a5a3b"></div>
+          <h3>Ethiopia Guji</h3><p>Blueberry, jasmine, honey.</p>
+          <div class="price">$18.00</div>
+          <div class="row">
+            <button class="btn" data-track="add_to_cart" data-param-item-id="SKU-001" data-param-item-name="Ethiopia Guji" data-param-value="18" data-param-currency="USD">Add to cart</button>
+            <button class="btn ghost" data-track="view_item" data-param-item-id="SKU-001" data-param-item-name="Ethiopia Guji">Details</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="swatch" style="background:#5c3d2a"></div>
+          <h3>Colombia Huila</h3><p>Caramel, red apple, cocoa.</p>
+          <div class="price">$16.00</div>
+          <div class="row">
+            <button class="btn" data-track="add_to_cart" data-param-item-id="SKU-002" data-param-item-name="Colombia Huila" data-param-value="16" data-param-currency="USD">Add to cart</button>
+            <button class="btn ghost" data-track="view_item" data-param-item-id="SKU-002" data-param-item-name="Colombia Huila">Details</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="swatch" style="background:#3b2a20"></div>
+          <h3>House Espresso</h3><p>Dark chocolate, hazelnut.</p>
+          <div class="price">$15.00</div>
+          <div class="row">
+            <button class="btn" data-track="add_to_cart" data-param-item-id="SKU-003" data-param-item-name="House Espresso" data-param-value="15" data-param-currency="USD">Add to cart</button>
+            <button class="btn ghost" data-track="view_item" data-param-item-id="SKU-003" data-param-item-name="House Espresso">Details</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Checkout</h2>
+      <p>Simulates a completed order (no payment is taken).</p>
+      <div class="row">
+        <button class="btn ghost" data-track="begin_checkout" data-param-value="34" data-param-currency="USD">Begin checkout</button>
+        <button class="btn" data-track="purchase" data-param-transaction-id="T-DEMO" data-param-value="34" data-param-currency="USD">Place test order ($34)</button>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap">Fernhill Coffee is a fictional store. GA Measurement ID: <code id="ga-id"></code></div></footer>
+
+  <aside id="event-log"><header><span>Events sent</span><span>GA4</span></header><ul id="event-log-list"></ul></aside>
+</body>
+</html>

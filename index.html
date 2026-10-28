@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fernhill Coffee — Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="analytics.js"></script>
+</head>
+<body>
+  <header><div class="wrap">
+    <a class="logo" href="index.html">☕ Fernhill Coffee</a>
+    <nav><a href="index.html" class="active">Home</a><a href="shop.html">Shop</a><a href="contact.html">Contact</a></nav>
+  </div></header>
+
+  <main class="wrap">
+    <div class="hero">
+      <h1>Small-batch coffee, roasted every Tuesday.</h1>
+      <p>A dummy store for testing Google Analytics. Click around — every interaction below sends an event.</p>
+      <div class="row">
+        <a class="btn" href="shop.html" data-track="cta_click" data-param-cta-name="hero_shop_now">Shop now</a>
+        <button class="btn ghost" data-track="cta_click" data-param-cta-name="hero_learn_more">Learn more</button>
+        <a class="btn ghost" href="https://example.com" target="_blank" rel="noopener">Outbound link</a>
+      </div>
+    </div>
+
+    <section>
+      <h2>Why Fernhill</h2>
+      <div class="grid">
+        <div class="card"><h3>Fresh</h3><p>Shipped within 48 hours of roasting.</p></div>
+        <div class="card"><h3>Traceable</h3><p>Every bag lists the farm and harvest date.</p></div>
+        <div class="card"><h3>Flexible</h3><p>Pause or cancel your subscription anytime.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Join the newsletter</h2>
+      <form id="newsletter" data-form-event="sign_up">
+        <label>Email <input type="email" name="email" required placeholder="you@example.com"></label>
+        <button class="btn" type="submit">Subscribe</button>
+        <p class="form-ok" hidden>Thanks! (sign_up event sent)</p>
+      </form>
+    </section>
+
+    <section class="filler">
+      <h2>Our story</h2>
+      <p>Scroll down to trigger scroll-depth events at 25%, 50%, 75% and 100%.</p>
+      <p>Fernhill started in a garage with a popcorn popper and a lot of burnt beans. Ten years later we roast on a 12-kilo drum and still taste every batch.</p>
+      <p>We buy directly from growers wherever we can, and pay well above market price for the coffees we love.</p>
+      <p>Our roasting style is light to medium: we want you to taste the fruit, the sugar and the place it came from.</p>
+      <p><a href="#" data-track="file_download" data-param-file-name="brew-guide.pdf">Download our brew guide (PDF)</a></p>
+    </section>
+  </main>
+
+  <footer><div class="wrap">Fernhill Coffee is a fictional store. GA Measurement ID: <code id="ga-id"></code></div></footer>
+
+  <aside id="event-log"><header><span>Events sent</span><span>GA4</span></header><ul id="event-log-list"></ul></aside>
+</body>
+</html>
