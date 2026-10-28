@@ -4,7 +4,7 @@
 // 2. Admin → Data streams → Web → copy the Measurement ID (G-XXXXXXXXXX)
 // 3. Paste it below.
 // ============================================================
-const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX';
+const GA_MEASUREMENT_ID = 'G-2EPBS78N6Q';
 
 // Load gtag.js
 (function () {
